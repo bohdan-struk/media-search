@@ -1,11 +1,8 @@
-// useSearch.test.js
-
 import axios from 'axios';
 import {renderHook, act} from '@testing-library/react';
 import useSearch from '../src/composables/useSearch';
 import {describe, it, expect} from "vitest";
 
-// Mock axios to prevent actual HTTP requests
 vi.mock('axios');
 
 describe('useSearch', () => {

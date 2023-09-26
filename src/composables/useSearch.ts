@@ -3,13 +3,6 @@ import axios from "axios";
 
 const apiKey = 'ukJyK7f_oSD8sRs6GytnZxaxCnv8XCiFi05QKrF_BeQ';
 
-interface SearchResults {
-  photos: any[];
-  loading: boolean;
-  failed: boolean;
-  totalPages?: number;
-}
-
 const useSearch = (): { totalPages: number | undefined; searchPhotos: (query: string, page?: number, color?: string, order?: string) => Promise<void>; failed: boolean; loading: boolean; photos: any[] } => {
   const [photos, setPhotos] = useState<any[]>([]);
   const [loading, setLoading] = useState(false);
