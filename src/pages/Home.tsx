@@ -45,7 +45,7 @@ const Home = () => {
 
 
   return (
-    <div className="container mx-auto min-h-[100vh] py-8">
+    <div className="container mx-auto min-h-[100vh] py-8 px-4">
       <div className="flex flex-col gap-4 items-center">
         <h1 className="text-2xl">Search your photos</h1>
         <Search onSearch={handleSearch} />
